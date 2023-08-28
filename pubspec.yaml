@@ -1,0 +1,60 @@
+name: flavor_demo
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  flutter_launcher_icons: ^0.13.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  flutter_flavorizr: ^2.2.1
+
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+    ios:
+  flavors:
+    dev:
+      app:
+        name: "Dev App"
+
+      android:
+        applicationId: "com.flavor_demo.flavor.flavor_demo.dev"
+      ios:
+        bundleId: "com.flavor_demo.flavor.flavor_demo.dev"
+      macos:
+        bundleId: "com.flavor_demo.flavor.flavor_demo.dev"
+    prod:
+      app:
+        name: "Prod App"
+
+      android:
+        applicationId: "com.flavor_demo.flavor.flavor_demo.prod"
+      ios:
+        bundleId: "com.flavor_demo.flavor.flavor_demo.prod"
+      macos:
+        bundleId: "com.flavor_demo.flavor.flavor_demo.prod"
