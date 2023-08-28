@@ -13,8 +13,8 @@ class FlavorScreen extends StatelessWidget {
             FlavorConfig.appFlavor == Flavor.dev ? Colors.red : Colors.purple,
         title: Text(
           FlavorConfig.appFlavor == Flavor.dev
-              ? 'Development Flavor'
-              : 'Production Flavor',
+              ? 'Development Flavor Feature'
+              : 'Production Flavor Feature',
           style: Theme.of(context)
               .textTheme
               .titleLarge
